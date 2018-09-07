@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.fmgame</groupId>
+	<artifactId>excel-to-conf</artifactId>
+	<version>1.0.0</version>
+
+	<properties>
+		<poi_version>3.17</poi_version>
+	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+		<dependency>
+		    <groupId>dom4j</groupId>
+		    <artifactId>dom4j</artifactId>
+		    <version>1.6.1</version>
+		    <exclusions>  
+	           <exclusion>
+	           	<groupId>xml-apis</groupId>
+	           	<artifactId>xml-apis</artifactId>
+	           </exclusion>
+		    </exclusions>  
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.31</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+		<dependency>
+		    <groupId>org.freemarker</groupId>
+		    <artifactId>freemarker</artifactId>
+		    <version>2.3.26-incubating</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>${poi_version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>${poi_version}</version>
+		    <exclusions>
+		    	<exclusion>
+		    		<groupId>com.github.virtuald</groupId>
+		    		<artifactId>curvesapi</artifactId>
+		    	</exclusion>
+		    </exclusions>
+		</dependency>
+		
+	</dependencies>
+	
+	<build>
+		<finalName>fm-excel-to-java-${project.version}</finalName>
+	</build>
+
+</project>
