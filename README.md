@@ -5,6 +5,7 @@
 * 快速转换1个或者多个excel文件生成.java和.json文件
 * excel文件支持配置java变量名，变量类型，
 * java文件集成了策划数据加载及读取
+* 利用freemarker框架生成java和json文件
 
 # Quick Start
 1. 配置excel文件格式及数据
