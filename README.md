@@ -34,7 +34,7 @@ FLAG_HEAD_LEN = 5
 ```
 3. run ExcelTo.java main
 ```file
-src\main\java\com\fmgame\exceltoconf
+src\main\java\com\fmgame\exceltoconf\ExcelToJava.java
 ```
 ```java
 	public static void main(String[] args) {
