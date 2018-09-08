@@ -10,7 +10,7 @@
 # Quick Start
 1. 配置excel文件格式及数据
 ```
-例: src\test\resources\W物品.xlsx
+拷贝src\test\resources\W物品.xlsx到D:\\excel目录下
 ```
 2. 配置文件生成路径
 ``` properties
